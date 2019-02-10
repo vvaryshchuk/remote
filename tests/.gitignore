@@ -1,0 +1,13 @@
+#Ignored folders
+
+.idea
+.pytest_cache
+__pycache__
+
+
+#Ignored files
+
+log.html
+output.xml
+report.html
+*.log
