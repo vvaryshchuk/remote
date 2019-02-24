@@ -2,7 +2,7 @@
 Documentation     *Example test for testing google search*
 ...
 ...               This test checks search engine on google.com.
-Suite Setup       Open Browser    https://www.google.com/
+Suite Setup       Open Browser    https://www.google.com/    chrome
 Suite Teardown    Close Browser
 Library           SeleniumLibrary
 Library           ../Common/GoogleSearch.py
