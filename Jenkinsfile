@@ -14,6 +14,8 @@ pipeline {
                 sh 'python --version'
                 sh 'echo $PWD'
                 sh 'docker-compose --version'
+                sh 'docker-compose up'
+                sh 'docker-compose down'
             }
         }
     }
