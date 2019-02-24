@@ -8,7 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'pip install docker-compose'
+                sh 'pip install --user docker-compose'
                 sh 'docker-compose --version'
                 sh 'echo $PWD'
             }
