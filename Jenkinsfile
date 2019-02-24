@@ -3,7 +3,7 @@
 */
 
 pipeline {
-    
+
     agent { docker { image 'python:3.6' 
                      args '-v /var/run/docker.sock:/var/run/docker.sock' } 
           }
@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'echo $PWD'
+                sh 'docker-compose --version'
             }
         }
     }
